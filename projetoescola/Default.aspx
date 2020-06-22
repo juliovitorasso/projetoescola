@@ -16,7 +16,7 @@
         <asp:RequiredFieldValidator ID="requerid1" runat="server" ControlToValidate="Txtusuario" ErrorMessage="Usuário Obrigatório" ForeColor="Red">*</asp:RequiredFieldValidator>
         <br />
         <asp:Label ID="Lblsenha" runat="server" Text="Senha:"></asp:Label>
-        <asp:TextBox ID="Txtsenha" runat="server"></asp:TextBox>
+        <asp:TextBox ID="Txtsenha" runat="server" TextMode="Password"></asp:TextBox>
         <asp:RequiredFieldValidator ID="RequiredFieldValidator2" runat="server" ControlToValidate="Txtsenha" ErrorMessage="Senha Obrigatório" ForeColor="Red">*</asp:RequiredFieldValidator>
         <br />
         <asp:Button ID="Btnentrar" runat="server" OnClick="Btnentrar_Click" Text="Entrar" />

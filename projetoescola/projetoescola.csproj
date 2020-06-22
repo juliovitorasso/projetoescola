@@ -75,6 +75,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="alunos.aspx" />
     <Content Include="Default.aspx" />
     <Content Include="Modelescola.Context.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
@@ -89,6 +90,13 @@
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="alunos.aspx.cs">
+      <DependentUpon>alunos.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="alunos.aspx.designer.cs">
+      <DependentUpon>alunos.aspx</DependentUpon>
+    </Compile>
     <Compile Include="alunos.cs">
       <DependentUpon>Modelescola.tt</DependentUpon>
     </Compile>

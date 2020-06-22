@@ -16,7 +16,26 @@ namespace projetoescola
 
         protected void Btnentrar_Click(object sender, EventArgs e)
         {
-            
+            string usuario = Txtusuario.Text;
+            string senha = Txtsenha.Text;
+
+            //cria conexao com o banco de dados
+            projetoescolaEntities conexao = new projetoescolaEntities();
+
+            //consulta o objeto baseado em login e senha
+            usuarios user =
+            conexao.usuarios.FirstOrDefault(
+                linha=>linha.login.Equals(usuario) &&
+                linha.senha.Equals(senha)
+                );
+
+            if (user !=null)
+            {
+                //login bem sucedido!
+                Response.Redirect("alunos.aspx");
+
+
+            }
             
             
         }
