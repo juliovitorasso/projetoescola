@@ -32,7 +32,7 @@ namespace projetoescola
             if (user !=null)
             {
                 //login bem sucedido!
-                Response.Redirect("alunos.aspx");
+                Response.Redirect("principal.aspx");
 
 
             }

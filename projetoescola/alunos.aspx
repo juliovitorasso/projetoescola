@@ -10,7 +10,38 @@
 <body>
     <form id="form1" runat="server">
         <div>
-            página para gerenciar os alunos
+            <asp:ValidationSummary ID="ValidationSummary1" runat="server" />
+            <br />
+            <asp:Label ID="lblnome" runat="server" Text="Nome:"></asp:Label>
+            <asp:TextBox ID="txtnome" runat="server"></asp:TextBox>
+            <asp:RequiredFieldValidator ID="RequiredFieldValidator1" runat="server" ControlToValidate="txtnome" ErrorMessage="Nome obrigatório" ForeColor="Red">*</asp:RequiredFieldValidator>
+            <br />
+            <asp:Label ID="lblsobrenome" runat="server" Text="Sobrenome:"></asp:Label>
+            <asp:TextBox ID="txtsobrenome" runat="server"></asp:TextBox>
+            <asp:RequiredFieldValidator ID="RequiredFieldValidator2" runat="server" ControlToValidate="txtsobrenome" ErrorMessage="Sobre obrigatório" ForeColor="Red">*</asp:RequiredFieldValidator>
+            <br />
+            <asp:Label ID="lblcpf" runat="server" Text="CPF:"></asp:Label>
+            <asp:TextBox ID="txtcpf" runat="server"></asp:TextBox>
+            <asp:RequiredFieldValidator ID="RequiredFieldValidator3" runat="server" ControlToValidate="txtcpf" ErrorMessage="CPF obrigatório" ForeColor="Red">*</asp:RequiredFieldValidator>
+            <br />
+            <asp:Label ID="lbldtnasc" runat="server" Text="Data de Nascimento:"></asp:Label>
+            <asp:TextBox ID="txtdtnasc" runat="server" TextMode="DateTime"></asp:TextBox>
+            <asp:RequiredFieldValidator ID="RequiredFieldValidator4" runat="server" ControlToValidate="txtdtnasc" ErrorMessage="Data de Nascimento obrigatório" ForeColor="Red">*</asp:RequiredFieldValidator>
+            <br />
+            <asp:Label ID="lblsemestre" runat="server" Text="Semestre:"></asp:Label>
+            <asp:TextBox ID="txtsemestre" runat="server"></asp:TextBox>
+            <asp:RequiredFieldValidator ID="RequiredFieldValidator5" runat="server" ControlToValidate="txtsemestre" ErrorMessage="Semestre obrigatório" ForeColor="Red">*</asp:RequiredFieldValidator>
+            <br />
+            <asp:Label ID="lblunidade" runat="server" Text="Unidade de Ensino:"></asp:Label>
+            <asp:TextBox ID="txtunidade" runat="server"></asp:TextBox>
+            <asp:RequiredFieldValidator ID="RequiredFieldValidator6" runat="server" ControlToValidate="txtunidade" ErrorMessage="Unidade de ensino obrigatório" ForeColor="Red">*</asp:RequiredFieldValidator>
+            <br />
+            <asp:Button ID="btnnovo" runat="server" Text="Novo" OnClick="btnnovo_Click" />
+&nbsp;<asp:Button ID="btnsalvar" runat="server" OnClick="btnsalvar_Click" Text="Salvar" />
+            <br />
+            <br />
+            <asp:GridView ID="gridalunos" runat="server">
+            </asp:GridView>
         </div>
     </form>
 </body>
