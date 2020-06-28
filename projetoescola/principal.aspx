@@ -18,7 +18,8 @@
 &nbsp;)</div>
         <div>
            <a href="alunos.aspx">Cadastro de Alunos</a><br />
-           <a href="rematricula.aspx">Gerenciar rematricula e semestre do aluno</a>
+           <a href="rematricula.aspx">Gerenciar rematricula e semestre do aluno</a><br />
+            <a href="consultaralunos.aspx">Consultar alunos matriculados</a>
         </div>
     </form>
 </body>
