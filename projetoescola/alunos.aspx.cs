@@ -11,9 +11,19 @@ namespace projetoescola
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            projetoescolaEntities conexao = new projetoescolaEntities();
-            atualizaGrid(conexao);
-
+            if (!IsPostBack)
+            {
+                if (Session["usuario_logado"] != null)
+                {
+                    projetoescolaEntities conexao = new projetoescolaEntities();
+                    atualizaGrid(conexao);
+                }
+                else
+                {
+                    //usuario nao está logado
+                    Response.Redirect("Default.aspx");
+                }
+            }
 
         }
 

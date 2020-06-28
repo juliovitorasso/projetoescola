@@ -11,6 +11,28 @@ namespace projetoescola
     {
         protected void Page_Load(object sender, EventArgs e)
         {
+            if (!IsPostBack)
+                {
+                if (Session["usuario_logado"] == null)
+                {
+                    Response.Redirect("Default.aspx");
+
+                }
+                else
+                {
+                    //recupera objeto usuario logado da sessão
+                    usuarios usuario = (usuarios)Session["usuario_logado"];
+                    lblusuariologado.Text = " Bem vindo " + usuario.nome;
+                }
+            }
+
+
+        }
+
+        protected void lbsair_Click(object sender, EventArgs e)
+        {
+            Session.RemoveAll();
+            Response.Redirect("Default.aspx");
 
         }
     }

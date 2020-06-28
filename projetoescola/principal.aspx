@@ -9,6 +9,13 @@
 </head>
 <body>
     <form id="form1" runat="server">
+    <div>
+
+
+        <asp:Label ID="lblusuariologado" runat="server" Text="Label"></asp:Label>
+&nbsp; (
+        <asp:LinkButton ID="lbsair" runat="server" OnClick="lbsair_Click">Sair</asp:LinkButton>
+&nbsp;)</div>
         <div>
            <a href="alunos.aspx">Cadastro de Alunos</a><br />
            <a href="rematricula.aspx">Gerenciar rematricula e semestre do aluno</a>

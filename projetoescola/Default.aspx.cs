@@ -32,6 +32,7 @@ namespace projetoescola
             if (user !=null)
             {
                 //login bem sucedido!
+                Session["usuario_logado"] = user;
                 Response.Redirect("principal.aspx");
 
 
