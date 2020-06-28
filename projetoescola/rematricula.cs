@@ -14,13 +14,15 @@ namespace projetoescola
     
     public partial class rematricula
     {
+        public int id { get; set; }
         public int idaluno { get; set; }
-        public string nome { get; set; }
         public string sobrenome { get; set; }
         public string cpf { get; set; }
         public System.DateTime datanascimento { get; set; }
         public string rematricula1 { get; set; }
-        public int semestre { get; set; }
+        public string semestre { get; set; }
         public string unidade { get; set; }
+    
+        public virtual alunos alunos { get; set; }
     }
 }

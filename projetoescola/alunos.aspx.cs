@@ -33,7 +33,7 @@ namespace projetoescola
             aluno.sobrenome = txtsobrenome.Text;
             aluno.cpf = txtcpf.Text;
             aluno.datanascimento =Convert.ToDateTime(txtdtnasc.Text);
-            aluno.semestre =Convert.ToInt32(txtsemestre.Text);
+            aluno.semestre =txtsemestre.Text;
             aluno.unidade = txtunidade.Text;
 
 

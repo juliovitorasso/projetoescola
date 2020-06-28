@@ -5,10 +5,11 @@
     <!-- Diagram content (shape and connector positions) -->
     <edmx:Diagrams>
       <Diagram DiagramId="3443a6b6b97d49f39947e4b2d323cb17" Name="Diagram1">
-        <EntityTypeShape EntityType="projetoescolamodel.alunos" Width="1.5" PointX="0.75" PointY="0.75" IsExpanded="true" />
-        <EntityTypeShape EntityType="projetoescolamodel.rematricula" Width="1.5" PointX="2.75" PointY="0.75" IsExpanded="true" />
         <EntityTypeShape EntityType="projetoescolamodel.usuarios" Width="1.5" PointX="4.75" PointY="0.75" IsExpanded="true" />
-        <EntityTypeShape EntityType="projetoescolamodel.unidades" Width="1.5" PointX="4.75" PointY="3" IsExpanded="true" />
+        <EntityTypeShape EntityType="projetoescolamodel.unidades" Width="1.5" PointX="4.875" PointY="2.875" />
+        <EntityTypeShape EntityType="projetoescolamodel.alunos" Width="1.5" PointX="0.5" PointY="0.75" />
+        <EntityTypeShape EntityType="projetoescolamodel.rematricula" Width="1.5" PointX="2.875" PointY="0.625" />
+        <AssociationConnector Association="projetoescolamodel.FK_rematricula_alunos" />
       </Diagram>
     </edmx:Diagrams>
   </edmx:Designer>

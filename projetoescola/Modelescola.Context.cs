@@ -25,9 +25,9 @@ namespace projetoescola
             throw new UnintentionalCodeFirstException();
         }
     
-        public virtual DbSet<alunos> alunos { get; set; }
-        public virtual DbSet<rematricula> rematricula { get; set; }
         public virtual DbSet<usuarios> usuarios { get; set; }
         public virtual DbSet<unidades> unidades { get; set; }
+        public virtual DbSet<alunos> alunos { get; set; }
+        public virtual DbSet<rematricula> rematricula { get; set; }
     }
 }

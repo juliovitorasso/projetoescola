@@ -88,6 +88,7 @@
       <LastGenOutput>Modelescola.cs</LastGenOutput>
     </Content>
     <Content Include="principal.aspx" />
+    <Content Include="rematricula.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
@@ -131,6 +132,13 @@
       <DependentUpon>principal.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="rematricula.aspx.cs">
+      <DependentUpon>rematricula.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="rematricula.aspx.designer.cs">
+      <DependentUpon>rematricula.aspx</DependentUpon>
+    </Compile>
     <Compile Include="rematricula.cs">
       <DependentUpon>Modelescola.tt</DependentUpon>
     </Compile>

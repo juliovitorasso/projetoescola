@@ -14,12 +14,21 @@ namespace projetoescola
     
     public partial class alunos
     {
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
+        public alunos()
+        {
+            this.rematricula = new HashSet<rematricula>();
+        }
+    
         public int id { get; set; }
         public string nome { get; set; }
         public string sobrenome { get; set; }
         public string cpf { get; set; }
         public System.DateTime datanascimento { get; set; }
-        public int semestre { get; set; }
+        public string semestre { get; set; }
         public string unidade { get; set; }
+    
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
+        public virtual ICollection<rematricula> rematricula { get; set; }
     }
 }

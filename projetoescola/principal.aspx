@@ -10,8 +10,8 @@
 <body>
     <form id="form1" runat="server">
         <div>
-           <a href="alunos.aspx">Alunos</a><br />
-           <a href="rematricula.aspx">Rematricula</a>
+           <a href="alunos.aspx">Cadastro de Alunos</a><br />
+           <a href="rematricula.aspx">Gerenciar rematricula e semestre do aluno</a>
         </div>
     </form>
 </body>
