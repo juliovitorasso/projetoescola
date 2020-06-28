@@ -147,5 +147,26 @@ namespace projetoescola
 
 
         }
+
+        protected void btnremover_Click(object sender, EventArgs e)
+        {
+            //criando a conexao
+            projetoescolaEntities conexao = new projetoescolaEntities();
+
+            //obtem registro selecionado na grid
+            int idselicionado =
+                Convert.ToInt32(gridalunos.SelectedValue.ToString());
+            //recuperar o objeto no banco de dados
+            alunos aluno = conexao.alunos.FirstOrDefault(
+                linha => linha.id.ToString().Equals(idselicionado.ToString()));
+
+            //remoção do registro
+            conexao.alunos.Remove(aluno);
+
+            conexao.SaveChanges();
+
+            atualizaGrid(conexao);
+
+        }
     }
 }

@@ -222,6 +222,15 @@ namespace projetoescola
         protected global::System.Web.UI.WebControls.Button btnalterar;
 
         /// <summary>
+        /// Controle btnremover.
+        /// </summary>
+        /// <remarks>
+        /// Campo gerado automaticamente.
+        /// Modificar a declaração do campo de movimento do arquivo de designer para o arquivo code-behind.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button btnremover;
+
+        /// <summary>
         /// Controle gridalunos.
         /// </summary>
         /// <remarks>

@@ -39,6 +39,7 @@
             <asp:Button ID="btnnovo" runat="server" Text="Novo" OnClick="btnnovo_Click" />
 &nbsp;<asp:Button ID="btnsalvar" runat="server" OnClick="btnsalvar_Click" Text="Salvar" ValidationGroup="form" />
             &nbsp;<asp:Button ID="btnalterar" runat="server" OnClick="btnalterar_Click" Text="Alterar" />
+            &nbsp;<asp:Button ID="btnremover" runat="server" OnClick="btnremover_Click" Text="Remover" />
             <br />
             <br />
             <asp:GridView ID="gridalunos" runat="server" BackColor="White" BorderColor="#999999" BorderStyle="None" BorderWidth="1px" CellPadding="3" GridLines="Vertical" DataKeyNames="id">
