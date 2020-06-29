@@ -42,6 +42,15 @@ namespace projetoescola
         protected global::System.Web.UI.WebControls.Label Lblusuario;
 
         /// <summary>
+        /// Controle RequiredFieldValidator.
+        /// </summary>
+        /// <remarks>
+        /// Campo gerado automaticamente.
+        /// Modificar a declaração do campo de movimento do arquivo de designer para o arquivo code-behind.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator RequiredFieldValidator;
+
+        /// <summary>
         /// Controle Txtusuario.
         /// </summary>
         /// <remarks>
@@ -49,15 +58,6 @@ namespace projetoescola
         /// Modificar a declaração do campo de movimento do arquivo de designer para o arquivo code-behind.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox Txtusuario;
-
-        /// <summary>
-        /// Controle requerid1.
-        /// </summary>
-        /// <remarks>
-        /// Campo gerado automaticamente.
-        /// Modificar a declaração do campo de movimento do arquivo de designer para o arquivo code-behind.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.RequiredFieldValidator requerid1;
 
         /// <summary>
         /// Controle Lblsenha.
@@ -69,15 +69,6 @@ namespace projetoescola
         protected global::System.Web.UI.WebControls.Label Lblsenha;
 
         /// <summary>
-        /// Controle Txtsenha.
-        /// </summary>
-        /// <remarks>
-        /// Campo gerado automaticamente.
-        /// Modificar a declaração do campo de movimento do arquivo de designer para o arquivo code-behind.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox Txtsenha;
-
-        /// <summary>
         /// Controle RequiredFieldValidator2.
         /// </summary>
         /// <remarks>
@@ -85,6 +76,15 @@ namespace projetoescola
         /// Modificar a declaração do campo de movimento do arquivo de designer para o arquivo code-behind.
         /// </remarks>
         protected global::System.Web.UI.WebControls.RequiredFieldValidator RequiredFieldValidator2;
+
+        /// <summary>
+        /// Controle Txtsenha.
+        /// </summary>
+        /// <remarks>
+        /// Campo gerado automaticamente.
+        /// Modificar a declaração do campo de movimento do arquivo de designer para o arquivo code-behind.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox Txtsenha;
 
         /// <summary>
         /// Controle Btnentrar.

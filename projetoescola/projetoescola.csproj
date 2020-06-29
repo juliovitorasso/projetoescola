@@ -78,6 +78,7 @@
     <Content Include="alunos.aspx" />
     <Content Include="consultaralunos.aspx" />
     <Content Include="Default.aspx" />
+    <Content Include="design.css" />
     <Content Include="Modelescola.Context.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
       <LastGenOutput>Modelescola.Context.cs</LastGenOutput>

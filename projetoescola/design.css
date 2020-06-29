@@ -1,0 +1,40 @@
+﻿input[type=text], input[type=password]{
+    padding: 10px 25px;
+    border-radius: 8px;
+    border: 4px solid black;
+    margin-bottom: 10px;
+    width:350px;
+}
+input[type=submit]{
+    background-color:aqua;
+    padding: 12px 30px;
+    border-radius: 14px;
+    margin-bottom:12px;   
+    font-weight:500 bold;
+}
+input[type=submit]:hover{
+    background-color:white;
+    color:black;
+    
+}
+span{
+    font-weight: bold;
+    font-family: sans-serif;
+}
+body{
+    background-color:navy;
+}
+.quadro{
+    background-color:seagreen;
+    border: black solid 6px;
+    border-radius:6px;
+    padding:10px;
+    width: 410px;
+    margin:0 auto;
+    margin-top:80px;
+}
+
+
+
+
+
